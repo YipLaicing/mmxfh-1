@@ -57,12 +57,7 @@
 -(void)initScene {
     // Background
     // You can change the .png files to change the background
-    CCSprite9Slice *BackGround = [CCSprite9Slice spriteWithImageNamed:@"timeField.png"];
-    BackGround.position = CGPointMake(self.contentSize.width/2, self.contentSize.height/2);
-    BackGround.scaleX = self.contentSize.width/BackGround.contentSize.width;
-    BackGround.scaleY = self.contentSize.height/BackGround.contentSize.height;
-
-    [self addChild:BackGround z:1];
+    
       [mController setTrain:[[TrainHead alloc] init]];
     train=mController.getTrain;
     train=[train create:0.5f ySet:0.15f];
